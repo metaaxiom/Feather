@@ -7,7 +7,7 @@ Simple, lightweight & super flexible 12-column CSS grid that supports mobile, me
 
 <strong>Large Page Wrap</strong></br>
 ```html
-<div class = "page-wrap-lg"></div>
+<div class ="page-wrap-lg"></div>
 ```
 </br>
 <strong>Medium Page Wrap</strong></br>
