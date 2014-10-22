@@ -1,7 +1,10 @@
-/*HTML HOUSEKEEPING*/
-html, body {
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+/*HTML HOUSEKEEPING*/
+html, body {
     padding-top: 30px;
 }
 
@@ -10,14 +13,12 @@ html, body {
     padding-left: 40px;
     padding-right: 40px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 .row {
     display: block;
     overflow: hidden;
     margin-bottom: 20px;
 }
-
 
 /*MOD ELEMENTS*/
 .elmnt-center {
@@ -36,24 +37,23 @@ html, body {
     clear: both;
 }
 .no-gutter {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 /*COLUMNS*/
 .col-12, .col-11, .col-10, .col-9,
 .col-8, .col-7, .col-6, .col-5,
 .col-4, .col-3, .col-2, .col-1 {
-    box-sizing: border-box;
     margin-right: 2%;
     float: left;
 }
-.col-12:last-child, .col-11:last-child, 
+.col-12:last-child, .col-11:last-child,
 .col-10:last-child, .col-9:last-child,
-.col-8:last-child, .col-7:last-child, 
+.col-8:last-child, .col-7:last-child,
 .col-6:last-child, .col-5:last-child,
-.col-4:last-child, .col-3:last-child, 
+.col-4:last-child, .col-3:last-child,
 .col-2:last-child, .col-1:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 .col-12 {width: 100%;}
 .col-11 {width: 91.5%;}
@@ -76,6 +76,13 @@ html, body {
 }
 .page-wrap-sm {
     max-width: 960px;
+}
+/* add margin-top when these elements appear next to each other instead of using BR tags */
+h1 ~ div[class|="page-wrap"]{
+    margin-top:2.5em;
+}
+div[class|="page-wrap"] ~ h1{
+    margin-top:1.75em;
 }
 
 /*MEDIA QUERIES*/
@@ -122,18 +129,18 @@ html, body {
         max-width: none;
         width: 100%;
     }
-    .col-12, .col-11, .col-10, .col-9, 
+    .col-12, .col-11, .col-10, .col-9,
     .col-8, .col-7, .col-6, .col-5,
     .col-4, .col-3, .col-2, .col-1 {
         width: 100%;
         margin-bottom: 20px;
     }
-    .col-12:last-child, .col-11:last-child, 
+    .col-12:last-child, .col-11:last-child,
     .col-10:last-child, .col-9:last-child,
-    .col-8:last-child, .col-7:last-child, 
+    .col-8:last-child, .col-7:last-child,
     .col-6:last-child, .col-5:last-child,
-    .col-4:last-child, .col-3:last-child, 
+    .col-4:last-child, .col-3:last-child,
     .col-2:last-child, .col-1:last-child {
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 }
