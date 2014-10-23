@@ -117,9 +117,6 @@ div[class|="page-wrap"] ~ h1{
     }
 }
 @media screen and (max-width: 960px) {
-    .page-wrap-lg {
-        max-width: 840px;;
-    }
     .page-wrap-md {
         max-width: 600px;
     }
