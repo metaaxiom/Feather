@@ -119,15 +119,15 @@ div[class|="page-wrap"] ~ h1{
 @media screen and (max-width: 960px) {
     .page-wrap-lg {
         max-width: none;
-        width: 100%;
+        width: 840px;
     }
     .page-wrap-md {
         max-width: none;
-        width: 100%;
+        width: 600px;
     }
     .page-wrap-sm {
         max-width: none;
-        width: 100%;
+        width: 600px;
     }
     .col-12, .col-11, .col-10, .col-9,
     .col-8, .col-7, .col-6, .col-5,
