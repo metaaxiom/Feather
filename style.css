@@ -5,27 +5,52 @@
 }
 /*HTML HOUSEKEEPING*/
 html, body {
-    padding-top: 30px;
+	font-size: 100%;
+}
+h1 {
+	font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+h2 {
+	font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+}
+h3 {
+	font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+h4 {
+	margin-top: 1.33em;
+    margin-bottom: 1.33em;
+}
+h5 {
+	font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+}
+h6 {
+	font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
 }
 
 /*WRAPPER ELEMENTS*/
-.page-wrap-lg, .page-wrap-md, .page-wrap-sm {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 auto;
-}
 .row {
     display: block;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
-/*MOD ELEMENTS*/
+/*TOOLS*/
 .elmnt-center {
+	display: block;
     margin: 0 auto;
 }
 .elmnt-padded {
-    padding: 20px;
+    padding: 1.25px;
 }
 .pull-left {
     float: left;
@@ -68,83 +93,41 @@ html, body {
 .col-2 {width: 15%;}
 .col-1 {width: 6.5%;}
 
-.page-wrap-lg {
-    max-width: 1440px;
-}
-.page-wrap-md {
-    max-width: 1200px;
-}
-.page-wrap-sm {
-    max-width: 960px;
-}
-/* add margin-top when these elements appear next to each other instead of using BR tags */
-h1 ~ div[class|="page-wrap"]{
-    margin-top:2.5em;
-}
-div[class|="page-wrap"] ~ h1{
-    margin-top:1.75em;
-}
-
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1680px) {
-    .page-wrap-lg {
-        max-width: 1200px;
-    }
-    .page-wrap-md {
-        max-width: 960px;
-    }
-    .page-wrap-sm {
-        max-width: 720px;
-    }
+	
 }
 @media screen and (max-width: 1440px) {
-    .page-wrap-lg {
-        max-width: 960px;
-    }
-    .page-wrap-md {
-        max-width: 960px;
-    }
-    .page-wrap-sm {
-        max-width: 720px;
-    }
+	
 }
 @media screen and (max-width: 1200px) {
-    .page-wrap-lg {
-        max-width: 840px;
-    }
-    .page-wrap-md {
-        max-width: 840px;
-    }
+	
 }
 @media screen and (max-width: 960px) {
-    .page-wrap-md {
-        max-width: 600px;
-    }
-    .page-wrap-sm {
-        max-width: 600px;
-    }
-    
+	h1 {
+		font-size: 1.5em;
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+	}
+	h2 {
+		font-size: 1.17em;
+		margin-top: 0.83em;
+		margin-bottom: 0.83em;
+	}
+	h3 {
+		font-size: 1.33em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
 }
 
 @media screen and (max-width: 480px) {
-    .page-wrap-lg {
-        max-width: none;
-        width: 100%;
-    }
-    .page-wrap-md {
-        max-width: none;
-        width: 100%;
-    }
-    .page-wrap-sm {
-        max-width: none;
-        width: 100%;
-    }
-    
     .col-12, .col-11, .col-10, .col-9,
     .col-8, .col-7, .col-6, .col-5,
     .col-4, .col-3, .col-2, .col-1 {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 2%;
+		margin-right: 0;
     }
     .col-12:last-child, .col-11:last-child,
     .col-10:last-child, .col-9:last-child,
