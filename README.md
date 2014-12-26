@@ -3,23 +3,6 @@ Orbit-Grid
 
 Simple, lightweight & super flexible 12-column CSS grid that supports mobile, medium, large, and even very large screens.
 
-## Page Wraps
-
-<strong>Large Page Wrap</strong></br>
-```html
-<div class="page-wrap-lg"></div>
-```
-</br>
-<strong>Medium Page Wrap</strong></br>
-```html
-<div class="page-wrap-md"></div>
-```
-</br>
-<strong>Small Page Wrap</strong></br>
-```html
-<div class="page-wrap-sm"></div>
-```
-
 ## Row
 
 ```html
@@ -84,7 +67,7 @@ Simple, lightweight & super flexible 12-column CSS grid that supports mobile, me
     margin: 0 auto;
 }
 .elmnt-padded {
-    padding: 20px;
+    padding: 1.25em;
 }
 .pull-left {
     float: left;
@@ -96,6 +79,6 @@ Simple, lightweight & super flexible 12-column CSS grid that supports mobile, me
     clear: both;
 }
 .no-gutter {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 ```
