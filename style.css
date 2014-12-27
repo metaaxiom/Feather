@@ -45,8 +45,17 @@ h6 {
 }
 
 /*TOOLS*/
+.text-center {
+    text-align: center !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-right {
+    text-align: right !important;
+}
 .elmnt-center {
-	display: block;
+    display: block;
     margin: 0 auto;
 }
 .elmnt-padded {
