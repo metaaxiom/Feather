@@ -1,7 +1,7 @@
-Orbit-Grid
+Feather
 ==========
 
-Simple, lightweight & super flexible 12-column CSS grid that supports mobile, medium, large, and even very large screens.
+Feather is a responsive and super flexible 12-column CSS grid with an incredibly small footprint. It was built with the intent of providing a lightweight alternative to the often bloated existing CSS frameworks.
 
 ## Row
 
@@ -52,15 +52,13 @@ Simple, lightweight & super flexible 12-column CSS grid that supports mobile, me
 ## Example
 
 ```html
-<div class="page-wrap-lg">
-  <div class="row">
-    <div class="col-6">Col-6</div>
-    <div class="col-6">Col-6</div>
-  </div>
+<div class="row">
+  <div class="col-6">Col-6</div>
+  <div class="col-6">Col-6</div>
 </div>
 ```
 
-## Additional Elements
+## Additional Tools
 
 ```css
 .elmnt-center {
