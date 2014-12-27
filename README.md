@@ -3,6 +3,8 @@ Feather
 
 Feather is a responsive and super flexible 12-column CSS grid with an incredibly small footprint. It was built with the intent of providing a lightweight alternative to the often bloated existing CSS frameworks.
 
+<a href = "http://htmlpreview.github.io/?https://github.com/JDerwisz/Feather/blob/master/demo.html" target="_blank">Demo</a>
+
 ## Row
 
 ```html
