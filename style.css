@@ -1,50 +1,108 @@
-*{
+/* ------------------------ HTML Reset ----------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-/*HTML HOUSEKEEPING*/
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ------------------------- Feather ------------------------- */
+
+/* HTML Housekeeping */
+* {box-sizing: border-box;}
 html, body {
-	font-size: 100%;
+    font-size: 100%;
+    margin: 0;
 }
 h1 {
-	font-size: 2em;
+    font-size: 2em;
     margin-top: 0.67em;
     margin-bottom: 0.67em;
 }
 h2 {
-	font-size: 1.5em;
+    font-size: 1.5em;
     margin-top: 0.83em;
     margin-bottom: 0.83em;
 }
 h3 {
-	font-size: 1.17em;
+    font-size: 1.17em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 h4 {
-	margin-top: 1.33em;
+    margin-top: 1.33em;
     margin-bottom: 1.33em;
 }
 h5 {
-	font-size: .83em;
+    font-size: .83em;
     margin-top: 1.67em;
     margin-bottom: 1.67em;
 }
 h6 {
-	font-size: .67em;
+    font-size: .67em;
     margin-top: 2.33em;
     margin-bottom: 2.33em;
 }
+label {
+    display: inline-block;
+    margin-top: 0.1875em;
+    margin-bottom: 0.1875em;
+}
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #eee;
+    border-radius: 3px;
+}
 
-/*WRAPPER ELEMENTS*/
+/* Rows */
 .row {
     display: block;
     overflow: hidden;
     margin-bottom: 2%;
 }
 
-/*TOOLS*/
+/* Images */
+.feather-img {width: 100%}
+
+/* Tools */
 .text-center {
     text-align: center !important;
 }
@@ -54,27 +112,39 @@ h6 {
 .text-right {
     text-align: right !important;
 }
-.elmnt-center {
-    display: block;
-    margin: 0 auto;
+.element-center-inner {
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari and Chrome */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
 }
-.elmnt-padded {
+.element-padded {
     padding: 1.25em;
 }
 .pull-left {
-    float: left;
+    float: left !important;
 }
 .pull-right {
-    float: right;
+    float: right !important;
 }
 .clearfix {
     clear: both;
 }
 .no-gutter {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
-/*COLUMNS*/
+/* Columns */
 .col-12, .col-11, .col-10, .col-9,
 .col-8, .col-7, .col-6, .col-5,
 .col-4, .col-3, .col-2, .col-1 {
@@ -102,55 +172,46 @@ h6 {
 .col-2 {width: 15%;}
 .col-1 {width: 6.5%;}
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 1680px) {
-	
+/* Media Queries */
+@media screen and (max-width: 60em) {
+    h1 {
+        font-size: 1.5em;
+        margin-top: 0.67em;
+        margin-bottom: 0.67em;
+    }
+    h2 {
+        font-size: 1.17em;
+        margin-top: 0.83em;
+        margin-bottom: 0.83em;
+    }
+    h3 {
+        font-size: 1.33em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .element-padded {
+        padding: 1em;
+    }
 }
-@media screen and (max-width: 1440px) {
-	
+@media screen and (max-width: 45em) {
+    .element-padded {
+        padding: 0.5em;
+    }
 }
-@media screen and (max-width: 1200px) {
-	
-}
-@media screen and (max-width: 960px) {
-	h1 {
-		font-size: 1.5em;
-		margin-top: 0.67em;
-		margin-bottom: 0.67em;
-	}
-	h2 {
-		font-size: 1.17em;
-		margin-top: 0.83em;
-		margin-bottom: 0.83em;
-	}
-	h3 {
-		font-size: 1.33em;
-		margin-top: 1em;
-		margin-bottom: 1em;
-	}
-	.elmnt-padded {
-		padding: 1em;
-	}
-}
-@media screen and (max-width: 720px) {
-	.elmnt-padded {
-		padding: 0.5em;
-	}
-}
-@media screen and (max-width: 480px) {
-    .col-12, .col-11, .col-10, .col-9,
-    .col-8, .col-7, .col-6, .col-5,
-    .col-4, .col-3, .col-2, .col-1 {
+@media screen and (max-width: 30em) {
+    .col-12:not(.no-stack), .col-11:not(.no-stack), .col-10:not(.no-stack), .col-9:not(.no-stack),
+    .col-8:not(.no-stack), .col-7:not(.no-stack), .col-6:not(.no-stack), .col-5:not(.no-stack),
+    .col-4:not(.no-stack), .col-3:not(.no-stack), .col-2:not(.no-stack), .col-1:not(.no-stack) {
         width: 100%;
         margin-bottom: 2%;
-		margin-right: 0;
+        margin-right: 0;
     }
-    .col-12:last-child, .col-11:last-child,
-    .col-10:last-child, .col-9:last-child,
-    .col-8:last-child, .col-7:last-child,
-    .col-6:last-child, .col-5:last-child,
-    .col-4:last-child, .col-3:last-child,
-    .col-2:last-child, .col-1:last-child {
+    .col-12:last-child:not(.no-stack), .col-11:last-child:not(.no-stack),
+    .col-10:last-child:not(.no-stack), .col-9:last-child:not(.no-stack),
+    .col-8:last-child:not(.no-stack), .col-7:last-child:not(.no-stack),
+    .col-6:last-child:not(.no-stack), .col-5:last-child:not(.no-stack),
+    .col-4:last-child:not(.no-stack), .col-3:last-child:not(.no-stack),
+    .col-2:last-child:not(.no-stack), .col-1:last-child:not(.no-stack) {
         margin-bottom: 0;
     }
 }
