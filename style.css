@@ -53,33 +53,34 @@ html, body {
     margin: 0;
 }
 h1 {
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    font-size: 4.2em;
+    line-height: 4.62em;
+    margin: 2.1em 0 1.68em 0;
 }
 h2 {
-    font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    font-size: 3.56em;
+    line-height: 3.916em;
+    margin: 1.78em 0 1.424em 0;
 }
 h3 {
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 2.92em;
+    line-height: 3.212em;
+    margin: 1.46em 0 1.168em 0;
 }
 h4 {
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
+    font-size: 2.28em;
+    line-height: 2.508em;
+    margin: 1.14em 0 0.912em 0;
 }
 h5 {
-    font-size: .83em;
-    margin-top: 1.67em;
-    margin-bottom: 1.67em;
+    font-size: 1.64em;
+    line-height: 1.804em;
+    margin: 0.82em 0 0.656em 0;
 }
 h6 {
-    font-size: .67em;
-    margin-top: 2.33em;
-    margin-bottom: 2.33em;
+    font-size: 1em;
+    line-height: 1.1em;
+    margin: 0.5em 0 0.4em 0;
 }
 label {
     display: inline-block;
@@ -100,7 +101,7 @@ input, textarea {
 }
 
 /* Images */
-.feather-img {width: 100%}
+.feather-img {width: 100%;}
 
 /* Tools */
 .text-center {
@@ -129,7 +130,7 @@ input, textarea {
     box-align:center;
 }
 .element-padded {
-    padding: 1.25em;
+    padding: 1.25em !important;
 }
 .pull-left {
     float: left !important;
@@ -145,13 +146,6 @@ input, textarea {
 }
 
 /* Large Columns */
-.l-12, .l-11, .l-10, .l-9,
-.l-8, .l-7, .l-6, .l-5,
-.l-4, .l-3, .l-2, .l-1 {
-    padding-left: 1em;
-    padding-right: 1em;
-    float: left;
-}
 .l-12 {width: 100%;}
 .l-11 {width: 91.5%;}
 .l-10 {width: 83%;}
@@ -165,23 +159,24 @@ input, textarea {
 .l-2 {width: 15%;}
 .l-1 {width: 6.5%;}
 
+.l-12, .l-11, .l-10, .l-9,
+.l-8, .l-7, .l-6, .l-5,
+.l-4, .l-3, .l-2, .l-1 {
+    float: left;
+}
+.l-11, .l-10, .l-9,
+.l-8, .l-7, .l-6, .l-5,
+.l-4, .l-3, .l-2, .l-1 {
+    margin-right: 2%;
+}
+.l-11:last-child, .l-10:last-child, .l-9:last-child,
+.l-8:last-child, .l-7:last-child, .l-6:last-child, .l-5:last-child,
+.l-4:last-child, .l-3:last-child, .l-2:last-child, .l-1:last-child {
+    margin-right: 0;
+}
+
 /* Media Queries */
 @media screen and (max-width: 60em) {
-    h1 {
-        font-size: 1.5em;
-        margin-top: 0.67em;
-        margin-bottom: 0.67em;
-    }
-    h2 {
-        font-size: 1.17em;
-        margin-top: 0.83em;
-        margin-bottom: 0.83em;
-    }
-    h3 {
-        font-size: 1.33em;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
     .element-padded {
         padding: 1em;
     }
@@ -191,13 +186,6 @@ input, textarea {
         padding: 0.5em;
     }
     /* Medium Columns */
-    .m-12, .m-11, .m-10, .m-9,
-    .m-8, .m-7, .m-6, .m-5,
-    .m-4, .m-3, .m-2, .m-1 {
-        padding-left: 1em;
-        padding-right: 1em;
-        float: left;
-    }
     .m-12 {width: 100%;}
     .m-11 {width: 91.5%;}
     .m-10 {width: 83%;}
@@ -210,16 +198,25 @@ input, textarea {
     .m-3 {width: 23.5%;}
     .m-2 {width: 15%;}
     .m-1 {width: 6.5%;}
-}
-@media screen and (max-width: 30em) {
-    /* Medium Columns */
-    .s-12, .s-11, .s-10, .s-9,
-    .s-8, .s-7, .s-6, .s-5,
-    .s-4, .s-3, .s-2, .s-1 {
-        padding-left: 1em;
-        padding-right: 1em;
+    
+    .m-12, .m-11, .m-10, .m-9,
+    .m-8, .m-7, .m-6, .m-5,
+    .m-4, .m-3, .m-2, .m-1 {
         float: left;
     }
+    .m-11, .m-10, .m-9,
+    .m-8, .m-7, .m-6, .m-5,
+    .m-4, .m-3, .m-2, .m-1 {
+        margin-right: 2%;
+    }
+    .m-11:last-child, .m-10:last-child, .m-9:last-child,
+    .m-8:last-child, .m-7:last-child, .m-6:last-child, .m-5:last-child,
+    .m-4:last-child, .m-3:last-child, .m-2:last-child, .m-1:last-child {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 30em) {
+    /* Small Columns */
     .s-12 {width: 100%;}
     .s-11 {width: 91.5%;}
     .s-10 {width: 83%;}
@@ -232,4 +229,20 @@ input, textarea {
     .s-3 {width: 23.5%;}
     .s-2 {width: 15%;}
     .s-1 {width: 6.5%;}
+    
+    .s-12, .s-11, .s-10, .s-9,
+    .s-8, .s-7, .s-6, .s-5,
+    .s-4, .s-3, .s-2, .s-1 {
+        float: left;
+    }
+    .s-11, .s-10, .s-9,
+    .s-8, .s-7, .s-6, .s-5,
+    .s-4, .s-3, .s-2, .s-1 {
+        margin-right: 2%;
+    }
+    .s-11:last-child, .s-10:last-child, .s-9:last-child,
+    .s-8:last-child, .s-7:last-child, .s-6:last-child, .s-5:last-child,
+    .s-4:last-child, .s-3:last-child, .s-2:last-child, .s-1:last-child {
+        margin-right: 0;
+    }
 }
