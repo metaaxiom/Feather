@@ -9,18 +9,29 @@
   <body>
     <style type="text/css">
       h1 {font-weight: normal;}
-      .l-12, .l-11, .l-10, .l-9,
-      .l-8, .l-7, .l-6, .l-5,
-      .l-4, .l-3, .l-2, .l-1, 
-      .m-12, .m-11, .m-10, .m-9,
-      .m-8, .m-7, .m-6, .m-5,
-      .m-4, .m-3, .m-2, .m-1,
-      .s-12, .s-11, .s-10, .s-9,
-      .s-8, .s-7, .s-6, .s-5,
-      .s-4, .s-3, .s-2, .s-1 {
-        background-color: #E7E7E7;
-        border-radius: 3px;
-        color: #666;
+      .l-12>div, .l-11>div, .l-10>div, .l-9>div,
+      .l-8>div, .l-7>div, .l-6>div, .l-5>div,
+      .l-4>div, .l-3>div, .l-2>div, .l-1>div, 
+      .m-12>div, .m-11>div, .m-10>div, .m-9>div,
+      .m-8>div, .m-7>div, .m-6>div, .m-5>div,
+      .m-4>div, .m-3>div, .m-2>div, .m-1>div,
+      .s-12>div, .s-11>div, .s-10>div, .s-9>div,
+      .s-8>div, .s-7>div, .s-6>div, .s-5>div,
+      .s-4>div, .s-3>div, .s-2>div, .s-1>div {
+        border-radius: 1px;
+        color: #ffffff;
+      }
+      .l-12>div, .m-12>div, .s-12>div {
+        background: #1565c0;
+      }
+      .l-11>div, .m-11>div, .s-11>div {
+        background: #1976d2;
+      }
+      .l-10>div, .m-10>div, .s-10>div {
+        background: #1e88e5;
+      }
+      .l-6>div, .m-6>div, .s-6>div {
+        background: #1976d2;
       }
       #page-wrap {
         margin: 0 auto;
@@ -31,16 +42,22 @@
 
     <div id = "page-wrap">
       <div class="row">
-        <div class="l-12 element-padded text-center">Always 12 Columns</div>
+        <div class="l-12">
+          <div class="element-padded text-center">12</div>
+        </div>
       </div>
       <div class="row">
-        <div class="l-6 element-padded text-center">Always 6 Columns</div>
-        <div class="l-6 element-padded text-center">Always 6 Columns</div>
+        <div class="l-6">
+          <div class="element-padded text-center">6</div>
+        </div>
+        <div class="l-6">
+          <div class="element-padded text-center">6</div>
+        </div>
       </div>
       <div class="row">
-        <div class="l-4 m-12 element-padded text-center">4 Columns Large, 12 Medium, 12 Small</div>
-        <div class="l-4 m-12 element-padded text-center">4 Columns Large, 12 Medium, 12 Small</div>
-        <div class="l-4 m-12 element-padded text-center">4 Columns Large, 12 Medium, 12 Small</div>
+        <div class="l-4 m-12 element-padded text-center">4, 12, 12</div>
+        <div class="l-4 m-12 element-padded text-center">4, 12, 12</div>
+        <div class="l-4 m-12 element-padded text-center">4, 12, 12</div>
       </div>
       <div class="row">
         <div class="l-3 m-12 element-padded text-center">3 Columns Large, 12 Medium, 12 Small</div>
@@ -61,6 +78,15 @@
         <div class="l-1 m-6 l-12 element-padded text-center">1 Column Large, 6 Medium, 12 Small</div>
         <div class="l-1 m-6 l-12 element-padded text-center">1 Column Large, 6 Medium, 12 Small</div>
         <div class="l-1 m-6 l-12 element-padded text-center">1 Column Large, 6 Medium, 12 Small</div>
+      </div>
+      <div class="row">
+        <div class="l-6">l-6</div>
+        <div class="l-4">l-4</div>
+        <div class="l-2">l-2</div>
+      </div>
+      <div class="row">
+        <div class="l-11">l-11</div>
+        <div class="l-1">l-1</div>
       </div>
     </div>
   </body>
