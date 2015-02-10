@@ -174,12 +174,12 @@ input, textarea {
 /* Media Queries */
 @media screen and (max-width: 60em) {
     .element-padded {
-        padding: 1em;
+        padding: 1em !important;
     }
 }
 @media screen and (max-width: 45em) {
     .element-padded {
-        padding: 0.5em;
+        padding: 0.5em !important;
     }
     /* Medium Columns */
 	.m-12 {width: 100%;}
